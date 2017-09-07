@@ -1,0 +1,113 @@
+body {font-family: Arial, Verdana;
+    font-size: 13px;
+}
+
+.leagueCaption {
+background-color: navy; 
+color: white;
+margin-left: 41px;
+margin-bottom: 0;
+width: 364px;
+padding-left: 10px;
+padding-right: 0px;
+padding-top: 10px; 
+padding-bottom: 10px; 
+}
+
+
+#tableHeader span.teamPosition {
+    border:none; 
+    width: 41px;
+}
+
+#tableHeader span.teamName {
+    border: none;
+    background-color: #D3D3D3; 
+    width: 251px; 
+    font-weight: normal;
+    
+}
+
+#tableHeader span.gamesPlayed {
+    border: none;
+    background-color: #D3D3D3;
+    width: 41px;     
+}
+
+#tableHeader span.goalDifference {
+    border: none;
+    background-color: #D3D3D3;   
+    width: 41px; 
+}
+
+#tableHeader span.teamPoints {
+    border: none;
+    background-color: #D3D3D3;   
+    width: 41px; 
+    font-weight: normal;
+}
+
+
+
+span.teamPosition {
+
+border-bottom: #D3D3D3 solid 1px; 
+display: inline-block;
+width: 40px;
+height: 20px;
+text-align: center;
+border-right: none;
+
+}
+
+
+span.teamName {
+
+    border-bottom: solid #D3D3D3 1px;
+    display: inline-block;
+    width: 250px;
+    height: 20px; 
+    font-weight: 700;
+}
+
+span.goalDifference {
+    
+        border-bottom: solid #D3D3D3 1px;
+        display: inline-block;
+        width: 40px;
+        height: 20px; 
+        text-align: center;
+        border-left:none;
+    }
+
+span.teamPoints {
+
+    border-bottom: solid #D3D3D3 1px;
+    display: inline-block;
+    width: 41px;
+    height: 20px; 
+    text-align: center;
+    border-left:none;
+    font-weight: 700; 
+}
+span.gamesPlayed {
+
+    border-bottom: solid #D3D3D3 1px;
+    display: inline-block; 
+    width: 40px;
+    height: 20px; 
+    text-align: center; 
+    border-left: none;
+
+}
+
+.teamDiv:hover {
+    background-color: lightblue;
+    width: 415px; 
+}
+
+@font-face {
+    font-family: 'skyReg';
+    src: url('library/fonts/sky_reg.ttf;');
+    
+}
