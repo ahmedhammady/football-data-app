@@ -2,15 +2,25 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="site.css">
     <title>Football data</title>
 </head>
 
 <body>
-    <h1>Football data</h1>
+    <h1>Football data app</h1>
 
     <script src="/src/get-data.js"></script>
     <script src="/src/index.js"></script>
 
 </body>
-
+<div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">-</button>
+    <div id="myDropdown" class="dropdown-content">
+        <div id="buttons"></div>
+    </div>
+  </div>    
+    <hr />
+    <div id="bodyLeagueTable"></div>
 </html>
+
+<!-- remove lines 17, 18 20, 21 to get back to how it was>
