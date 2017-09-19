@@ -9,18 +9,21 @@
 <body>
     <h1>Football data</h1>
 
-    <script src="/src/get-data.js"></script>
-    <script src="/src/index.js"></script>
+    <div>
+        <div class="dropdown">
+            <button onclick="showOptions()" class="dropbtn">Leagues</button>
+            <div id="myDropdown" class="dropdown-content">
+                <div id="buttons"></div>
+            </div>
+        </div>
+        <div id="bodyLeagueTable"></div>
+
+        <div id="fixturesList"></div>
+
+        <script src="/src/index.js"></script>
+    </div>
+
 
 </body>
-<div class="dropdown">
-    <button onclick="myFunction()" class="dropbtn">-</button>
-    <div id="myDropdown" class="dropdown-content">
-        <div id="buttons"></div>
-    </div>
-  </div>    
-    <hr />
-    <div id="bodyLeagueTable"></div>
-</html>
 
-<!-- remove lines 17, 18 20, 21 to get back to how it was>
+</html>
