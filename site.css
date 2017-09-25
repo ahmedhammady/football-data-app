@@ -2,18 +2,87 @@ body {font-family: Arial, Verdana;
     font-size: 13px;
 }
 
-.leagueCaption {
-background-color: navy; 
-color: white;
-margin-left: 41px;
-margin-bottom: 0;
-width: 364px;
-padding-left: 10px;
-padding-right: 0px;
-padding-top: 10px; 
-padding-bottom: 10px; 
+h1 {
+    text-align: center;
 }
 
+#bodyLeagueTable {
+    position: absolute; 
+    left: 18%; 
+    top: 85px;
+
+}
+
+.dropbtn {
+    background-color: navy;
+    color: white;
+    padding: 16px;
+    font-size: 16px; 
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    position: relative;
+    width: 170;
+}
+
+.dropbtn:active, .dropbtn:focus {
+    box-shadow: none !important;
+    outline: none; 
+}
+
+.dropdown {
+    position: absolute;
+    top: 70px;
+    display: inline-block;
+    left: 6px;
+}
+
+.dropdown-content {
+    display: none; 
+    position: absolute;
+    min-width: 160px;
+    background-color: white;
+    color: navy;
+    z-index: 1; 
+    box-shadow: 1px 1px 15px -6px rgba(5,5,145,1);
+}
+
+.leagueLink {
+    padding-bottom: 10px;
+    display: block;
+    font-size: 14px;
+}
+
+.leagueLink:hover {
+background-color:#e2e2e2;
+cursor: pointer;
+border-radius: 4px;
+}
+
+.dropdown-content button {
+    color: black; 
+    padding: 12px 16px; 
+    display: block;
+}
+
+.show {
+    display: block;
+}
+
+.leagueCaption {
+    background-color: navy; 
+    color: white;
+    margin-left: 41px;
+    margin-bottom: 0;
+    width: 364px;
+    padding-left: 10px;
+    padding-right: 0px;
+    padding-top: 15px; 
+    padding-bottom: 15px; 
+    font-size: 20px;
+    position: relative;
+    bottom: 15px;
+}
 
 #tableHeader span.teamPosition {
     border:none; 
@@ -47,22 +116,16 @@ padding-bottom: 10px;
     font-weight: normal;
 }
 
-
-
 span.teamPosition {
-
-border-bottom: #D3D3D3 solid 1px; 
-display: inline-block;
-width: 40px;
-height: 20px;
-text-align: center;
-border-right: none;
-
+    border-bottom: #D3D3D3 solid 1px; 
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    text-align: center;
+    border-right: none;
 }
 
-
 span.teamName {
-
     border-bottom: solid #D3D3D3 1px;
     display: inline-block;
     width: 250px;
@@ -71,14 +134,13 @@ span.teamName {
 }
 
 span.goalDifference {
-    
-        border-bottom: solid #D3D3D3 1px;
-        display: inline-block;
-        width: 40px;
-        height: 20px; 
-        text-align: center;
-        border-left:none;
-    }
+    border-bottom: solid #D3D3D3 1px;
+    display: inline-block;
+    width: 40px;
+    height: 20px; 
+    text-align: center;
+    border-left:none;   
+ }
 
 span.teamPoints {
 
@@ -106,8 +168,28 @@ span.gamesPlayed {
     width: 415px; 
 }
 
-@font-face {
+@font-face {            
     font-family: 'skyReg';
     src: url('library/fonts/sky_reg.ttf;');
-    
+}
+
+p {
+    padding: 0;
+}
+
+#fixturesList {
+    position: absolute; 
+    left: 800px;
+    top: 165px; 
+}
+
+#fixturesList .teamName {
+    text-align: center;
+}
+
+.score {
+display: inline-block;
+width: 32;
+text-align: center;
+font-weight: 700;
 }
