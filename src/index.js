@@ -161,7 +161,6 @@ var createTable = function (competitionData) {
 
     for (var i = 0; i < competitionData.standing.length; i++) {
         var tableRow = competitionData.standing[i];
-       // console.log(tableRow.teamName, tableRow.points)
     }
 
     var container = document.getElementById('bodyLeagueTable');
@@ -316,34 +315,10 @@ window.onclick = function (event) {
         var i;
         for (i = 0; i < dropdowns.length; i++) {
             var openDropdown = dropdowns[i];
-            // if (openDropdown.classList.contains('show')) {
-            //     openDropdown.classList.remove('show');
-            // }
         }
     }
 }
 
-
-// var leagueTable = document.createElement('table');
-
-// var tr = leagueTable.insertRow(-1);
-
-// var col = [ 'position', 'teamName', 'points' ];    
-// for (var i = 0; i < col.length; i++) {
-//     var th = document.createElement('th');
-//     th.innerHTML = col[i];
-//     tr.appendChild(th);
-// }
-
-// for (var i = 0; i < competitionData.standing.length; i++) {
-
-//     tr = leagueTable.insertRow(-1);
-
-//     for (var j = 0; j < col.length; j++) {
-//         var tableCell = tr.insertCell(-1);
-//         tableCell.innerHTML = competitionData.standing[i][col[j]];
-//     }
-// }
 
 getData('http://api.football-data.org/v1/competitions', onCompetitionsLoaded); //This is what sets off the chain. 
 
